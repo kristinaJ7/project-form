@@ -1,0 +1,118 @@
+:root{
+    /*шрифты и текст*/
+    --main-font-family:Jost, sans-serif;
+    --text-color:#ffffff;
+    --main-font-weight:900;
+    --font-weight: 600;
+    /*тени*/
+    --box-shadow-light: 0 8px 15px rgba(0, 0, 0, 0.2);
+    --box-shadow-heavy: 0 18px 30px rgba(114, 90, 90, 0.863);
+    /*отступы*/
+     --base-spacing: 30px;
+    --small-spacing: 20px;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%; /* reset для корневого шрифта */
+}
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #695858;
+}
+.form__container{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+}
+.search-form{
+    transform: scale(1);
+    transition: transform 0.3s ease;
+    will-change: transform;
+}
+.search-form:hover {
+    transform: scale(1.1);
+    box-shadow:  var(--box-shadow-heavy);
+}
+.search-form__fieldset{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border: none;
+    outline: none;
+    border: 5px solid #756868;
+    border-radius: 50px;
+    box-shadow:  0 18px 30px rgba(171, 145, 145, 0.863);
+}
+.search-form__fieldset-title{
+    font-family: var(--main-font-family);
+    font-weight: var(--main-font-weight);
+    font-size: 5em;
+    color: #ffffff;
+    padding-left: var(--base-spacing);
+    padding-right:var(--base-spacing);
+}
+.search-form__fieldset-title:hover{
+    color: #a39e9e;
+}
+.form__item{
+    display: flex;
+    flex-direction: column;
+    font-size: 2em;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: var(--small-spacing);
+}
+.form__item:hover {
+    background-color: #746666;
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 20px rgba(170, 166, 166, 0.863);
+    transform: translateY(-2px);
+}
+.form__item:hover::placeholder {
+    color: #ffffff; 
+    transition: color 0.3s ease;
+}
+.visually-hidden{
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.form__button{
+    font-size: 3em;
+    font-family: var(--main-font-family);
+    border: 1px solid #000000;
+    border-radius: 10px;
+    width: 53%;
+    font-weight: var(--font-weight);
+    background-color: #943030;
+    color: #ffffff;
+    padding: var(--small-spacing);
+    margin-bottom: 20px;
+}
+.form__button:hover{
+    background-color: #521919;
+    transition: transform 0.3s ease;
+    box-shadow: var(--box-shadow-light);
+    transform: translateY(-2px);
+    box-shadow:  0 9px 15px rgba(110, 44, 44, 0.863);
+}
+.form__button:active{
+    background-color: #5c0909;
+    transform: scale(0.95) translateY(2px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    transition: all 0.1s;
+}
+

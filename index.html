@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang=“ru”>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark light" />
+    <link rel="stylesheet" href="/style/globals.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="/style/variables.css">
+    <title>project-form</title>
+</head>
+
+<body>
+    <main>
+        <section class="form__container">
+            <form class="search-form">
+                <fieldset class="search-form__fieldset">
+                    <h2 class="search-form__fieldset-title">заполните форму</h2>
+                    <label for="name" class="form__label  visually-hidden">Имя</label>
+                    <input type="text" class="form__item form__item_el_name" id="name" name="name" required
+                        placeholder="имя"/>
+
+                    <label for="last-name" class="form__label  visually-hidden">Фамилия</label>
+                    <input type="text" class="form__item form__item_el_last-name" id="last-name" name="last-name"
+                        required placeholder="фамилия"/>
+
+                    <label for="email" class="form__label  visually-hidden">E-mail</label>
+                    <input type="email" class="form__item form__item_el_email" id="email" name="email" required
+                        placeholder="email"/>
+                    <button class="form__button" type="button">отправить</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
