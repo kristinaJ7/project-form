@@ -16,7 +16,7 @@
 - HTML5
 - CSS3
 - Flexbox/Grid
-- SCSS (если используется)
+- CSS
 
 
 
